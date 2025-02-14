@@ -37,5 +37,9 @@ def somme(val):
     sommetotale = sum(list(map(int, val.split('/'))))
     return "La somme totale des valeurs est :" + str(sommetotale)
 
+@app.route('/cnam')
+def cnampage():
+    return render_template('cnam.html')
+
 if __name__ == "__main__":
   app.run(debug=True)
