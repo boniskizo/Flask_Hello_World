@@ -32,7 +32,7 @@ def parite(val):
     else:
         return "La valeur que vous avez donné est impaire"
 
-@app.route('/sommetotale/path:val')
+@app.route('/sommetotale/<path:val>')
 def sommetot(val):
     sommet = list(map(int, val.split('/')))
     sommetotale = sum(sommet)
