@@ -17,20 +17,25 @@ def exercices():
 def MaPremiereAPI():
     return render_template('contact.html')
 
-@app.route('/calcul_carre/<int:val_user>')
-def carre(val_user):
-    return "<h2>Le carré de la valeur est : </h2>" + str(val_user*val_user)
+@app.route('/calcul_carre/<int:val>')
+def carre(val):
+    return "<h2>Le carré de la valeur est : </h2>" + str(val*val)
 
 @app.route('/somme/<int:val1>/<int:val2>')
 def somme(val1,val2):
     return "<h2>La somme de vos valeurs est : </h2>" + str(val1+val2)
 
-@app.route('/parite/<int:val1>')
-def parite(val1):
-    if val1%2==0:
+@app.route('/parite/<int:val>')
+def parite(val):
+    if val%2==0:
         return "La valeur que vous avez donné est paire"
     else:
         return "La valeur que vous avez donné est impaire"
+
+@app.route('/sommetotale/path:val')
+def somme(val):
+    sommetotale = sum(list(map(int, val.split('/'))))
+    return "La somme totale des valeurs est :" + str(sommetotale)
 
 if __name__ == "__main__":
   app.run(debug=True)
