@@ -34,7 +34,8 @@ def parite(val):
 
 @app.route('/sommetotale/path:val')
 def sommetot(val):
-    sommetotale = sum(list(map(int, val.split('/'))))
+    sommet = list(map(int, val.split('/')))
+    sommetotale = sum(sommet)
     return "La somme totale des valeurs est :" + str(sommetotale)
 
 @app.route('/cnam/')
