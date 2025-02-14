@@ -17,7 +17,7 @@ def exercices():
 def MaPremiereAPI():
     return render_template('contact.html')
 
-@app.route('/calcul_carre/<int:val>')
+@app.route('/carre/<int:val>')
 def carre(val):
     return "<h2>Le carré de la valeur est : </h2>" + str(val*val)
 
@@ -36,7 +36,18 @@ def parite(val):
 def sommetot(val):
     sommet = list(map(int, val.split('/')))
     sommetotale = sum(sommet)
-    return "La somme totale des valeurs est :" + str(sommetotale)
+    return "La somme totale des valeurs est : " + str(sommetotale)
+
+@app.route('/sommemax/<path:val>')
+def sommemax(val):
+    sommet = list(map(int, val.split('/')))
+    compare = 0
+    for i in range(len(sommet)):
+        if (compare-sommet[i]>=0):
+            break
+        else:
+            compare=sommet[i]
+    return "La valeur max est :" + str(compare)
 
 @app.route('/cnam/')
 def cnampage():
