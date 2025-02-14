@@ -32,10 +32,10 @@ def parite(val):
     else:
         return "La valeur que vous avez donné est impaire"
 
-@app.route('/sommetotale/path:val')
-def somme(val):
-    sommetotale = sum(list(map(int, val.split('/'))))
-    return "La somme totale des valeurs est :" + str(sommetotale)
+#@app.route('/sommetotale/path:val')
+#def somme(val):
+#    sommetotale = sum(list(map(int, val.split('/'))))
+#    return "La somme totale des valeurs est :" + str(sommetotale)
 
 @app.route('/cnam/')
 def cnampage():
