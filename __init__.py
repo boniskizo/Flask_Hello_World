@@ -53,5 +53,9 @@ def sommemax(val):
 def cnampage():
     return render_template('cnam.html')
 
+@app.route("/exercice_base1/")
+def exo1():
+    return render_template('exercice_base1.html')
+
 if __name__ == "__main__":
   app.run(debug=True)
