@@ -65,7 +65,29 @@ def exo2():
 def exo4():
     return render_template('formulaire.html')
 
+@app.route("/TP1/")
+def tp1():
+    return render_template('TP1.html')
 
+@app.route("/actualite/")
+def actualite():
+    return render_template('actualite.html')
+
+@app.route("/page1/")
+def page1():
+    return render_template('page1.html')
+
+@app.route("/page2/")
+def page2():
+    return render_template('page2.html')
+
+@app.route("/page3/")
+def page3():
+    return render_template('page3.html')
+
+@app.route("/cv/")
+def cv():
+    return render_template('cv.html')
 
 if __name__ == "__main__":
   app.run(debug=True)

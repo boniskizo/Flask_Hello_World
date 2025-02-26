@@ -1,0 +1,86 @@
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>TP Page 3</title>
+</head>
+<body>
+
+<div>
+    <label for="username">Votre pseudo :</label>
+    <input type="text" id="username" name="username" />
+</div>
+    
+<div>
+    <label for="pass">Votre mot de passe :</label>
+    <input type="password" id="pass" name="password"/>
+</div>
+
+<div>
+    <label for="pass1">Ressaisir votre mot de passe :</label>
+    <input type="password1" id="pass1" name="password1"/>
+</div>
+<fieldset>
+    <legend>OS préféré :</legend>  
+    <div>
+        <input type="radio" id="WindowsXP"/>
+        <label for="WindowsXP">Windows XP</label>
+    </div>
+    
+    <div>
+        <input type="radio" id="WindowsVista"/>
+        <label for="WindowsVista">Windows Vista</label>
+    </div>
+    
+    <div>
+        <input type="radio" id="MacOSX"/>
+        <label for="MacOSX">MacOS X</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Linux"/>
+        <label for="Linux">Linux</label>
+    </div>
+
+    <div>
+        <input type="radio" id="Autre"/>
+        <label for="Autre">Autre</label>
+    </div>
+
+</fieldset>
+
+<fieldset>
+    <legend>Vous possédez :</legend>
+  
+    <div>
+      <input type="checkbox" id="pcUnit" name="pcUnit"/>
+      <label for="pcUnit">Un ordinateur de bureau</label>
+    </div>
+    <div>
+      <input type="checkbox" id="portable" name="portable" />
+      <label for="portable">Un portable</label>
+    </div>
+    <div>
+        <input type="checkbox" id="netbook" name="netbook" />
+        <label for="netbook">Un netbook</label>
+    </div>
+    <div>
+        <input type="checkbox" id="tablette" name="tablette" />
+        <label for="tablette">Une tablette (Pad)</label>
+    </div>
+</fieldset>
+  
+
+<p>
+    <label for="profession">Votre profession :</label>
+    <select multiple name="profession" id="profession">
+      <option>chomeur</option>
+      <option>etudiant</option>
+      <option>fonctionnaire</option>
+      <option>prive</option>
+      <option>retraite</option>
+    </select>
+  </p>
+
+<input type="submit" value="S'inscrire" />
+</body>
+</html>
