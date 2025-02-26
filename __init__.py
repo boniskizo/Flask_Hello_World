@@ -61,9 +61,11 @@ def exo1():
 def exo2():
     return render_template('exercice_base2.html')
 
-@app.route("/exercice_base3/")
-def exo3():
-    return render_template('exercice_base3.html')
+@app.route("/formulaire/")
+def exo4():
+    return render_template('formulaire.html')
+
+
 
 if __name__ == "__main__":
   app.run(debug=True)
