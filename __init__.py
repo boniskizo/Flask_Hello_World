@@ -93,5 +93,10 @@ def cv():
 def Exemple_Base_SVG():
     return render_template('Exemple_Base_SVG.html')
 
+@app.route("/valet/")
+def valet():
+    return render_template('valet.html')
+
+
 if __name__ == "__main__":
   app.run(debug=True)
