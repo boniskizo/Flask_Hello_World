@@ -97,6 +97,9 @@ def Exemple_Base_SVG():
 def valet():
     return render_template('valet.html')
 
+@app.route("/chenille/")
+def chenille():
+    return render_template('chenille.html')
 
 if __name__ == "__main__":
   app.run(debug=True)
