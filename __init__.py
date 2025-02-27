@@ -89,5 +89,9 @@ def page3():
 def cv():
     return render_template('cv.html')
 
+@app.route("/maison/")
+def Exemple_Base_SVG():
+    return render_template('Exemple_Base_SVG.html')
+
 if __name__ == "__main__":
   app.run(debug=True)
