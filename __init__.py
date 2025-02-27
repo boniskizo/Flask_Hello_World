@@ -101,5 +101,10 @@ def valet():
 def chenille():
     return render_template('chenille.html')
 
+@app.route("/carre/")
+def CSS_Carre():
+    return render_template('CSS_Carre.html')
+
+
 if __name__ == "__main__":
   app.run(debug=True)
