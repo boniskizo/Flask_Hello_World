@@ -14,12 +14,20 @@
 	function controler(){
 		var result =""
 		for (i=0;i<3;i++) {
-			if(document.getElementById('Control'+i).checked){
-				result = result + '<img src="img.jpg"  width="50" height="60">'
-			} document.getElementById('imag').innerHTML = result;
-		}	
+			if(document.getElementById('Control'+i).checked) {
+				if (i==0) {
+					result = result + '<img src="../static/images/dembele.jpg">''
+				}
+				else if (i==1) {
+					result = result + '<img src="../static/images/mbappe.jpg">'
+				}
+				else if (i==2) {
+					result = result + '<img src="../static/images/raphinha.jpg">''
+				}
+			}
+		} document.getElementById('imag').innerHTML = result;
+	}	
 		
-	}
 
 </script>
 </head>
