@@ -109,6 +109,9 @@ def CSS_Carre():
 def etoiles():
     return render_template('Carre_Etoiles.html')
 
+@app.route("/images/")
+def images():
+    return render_template('images.html')
 
 if __name__ == "__main__":
   app.run(debug=True)
