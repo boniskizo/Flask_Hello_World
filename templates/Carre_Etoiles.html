@@ -9,18 +9,30 @@ function afficher(){
 	var resultat = "";	
 		
 	for (j=0; j<saisie ; j++) {
-                for (i=0; i<saisie ; i++) {
-                        if (i+1<saisie-j) {
-                                resultat += "_"
-                        } 
-                        else {
-                                resultat += "*";
-                        }
-                         
-                }
-                resultat += "</br>";
+                 for (i=0; i<saisie ; i++) {
+                         if (i+1<saisie-j) {
+                                 resultat += "_"
+                         } 
+                         else {
+                                 resultat += "**";
+                         }
+                          
+                 }
+                 resultat += "</br>";
         }
 	
+         for (j=0; j<saisie ; j++) {
+                 for (i=0; i<saisie ; i++) {
+                         if (i+1<j+1) {
+                                 resultat += "_"
+                         } 
+                         else {
+                                 resultat += "**";
+                         }
+                          
+                 }
+                 resultat += "</br>";
+         }
 	document.getElementById('result').innerHTML = resultat;
 
 }
