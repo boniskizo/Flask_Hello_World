@@ -8,13 +8,18 @@ function afficher(){
 	var saisie = parseInt(document.getElementById('V1').value);
 	var resultat = "";	
 		
-	for (j=0; j<saisie ; j++){
-        for (i=0; i<saisie-j ; i++){
-                resultat += "*"; 
-        }
+	for (j=0; j<saisie ; j++) {
+                for (i=0; i<saisie ; i++) {
+                        if (i+1<saisie-j) {
+                                resultat += "_"
+                        } 
+                        else {
+                                resultat += "*";
+                        }
+                         
+                }
                 resultat += "</br>";
         }
-
 	
 	document.getElementById('result').innerHTML = resultat;
 
