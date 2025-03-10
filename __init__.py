@@ -105,6 +105,10 @@ def chenille():
 def CSS_Carre():
     return render_template('CSS_Carre.html')
 
+@app.route("/etoiles/")
+def etoiles():
+    return render_template('Carre_Etoiles.html')
+
 
 if __name__ == "__main__":
   app.run(debug=True)
