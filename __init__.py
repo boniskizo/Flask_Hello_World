@@ -113,5 +113,10 @@ def etoiles():
 def images():
     return render_template('images.html')
 
+@app.route("/Jeu_Des/")
+def Jeu_Des_Base():
+    return render_template('Jeu_Des_Base.html')
+
+
 if __name__ == "__main__":
   app.run(debug=True)
