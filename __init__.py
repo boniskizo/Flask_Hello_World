@@ -113,7 +113,7 @@ def etoiles():
 def images():
     return render_template('images.html')
 
-@app.route("/Jeu_Des/")
+@app.route("/jeu_des/")
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html')
 
