@@ -117,6 +117,9 @@ def images():
 def Jeu_Des_Base():
     return render_template('Jeu_Des_Base.html')
 
+@app.route("/roulette_russe/")
+def roulette_russe():
+    return render_template('Barillet_Vide.html')
 
 if __name__ == "__main__":
   app.run(debug=True)
